@@ -1,6 +1,7 @@
 "use strict"
 
-require('dotenv').config();
+require('dotenv').config({ path: __dirname + "/../.env"});
+
 const env = process.env.NODE_ENV;
 const config = {
     port: Number(process.env.PORT),
